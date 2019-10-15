@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/startred"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/utama"
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:background="@color/startred">
+
+        <LinearLayout
+            android:id="@+id/mark"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:background="@drawable/sampul"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto"
+                android:layout_width="99dp"
+                android:layout_height="106dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/fiture" />
+
+            <LinearLayout
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="Hemanolisa Monika Putri"
+                android:textColor="#030303"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jurusan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="Informatic Engineering">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/itn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="ITN malang"
+                android:textSize="12dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ig"
+            android:layout_width="120dp"
+            android:layout_height="115dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="303dp"
+            android:src="@drawable/instagram" />
+
+        <TextView
+            android:id="@+id/k_ig"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:text="2K"
+            android:textStyle="bold"
+            android:layout_marginStart="39dp"
+            android:gravity="left"
+            android:layout_marginTop="410dp"/>
+
+        <TextView
+            android:id="@+id/fol_ig"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="followers"
+            android:layout_marginStart="29dp"
+            android:gravity="left"
+            android:layout_marginTop="450dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fb"
+            android:layout_width="2000dp"
+            android:layout_height="121dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="299dp"
+            android:layout_marginEnd="34dp"
+            android:src="@drawable/facebook" />
+
+        <TextView
+            android:id="@+id/k_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:text="1K"
+            android:textStyle="bold"
+            android:layout_marginStart="178dp"
+            android:gravity="left"
+            android:layout_marginTop="410dp"/>
+
+        <TextView
+            android:id="@+id/fol_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="192dp"
+        android:gravity="fill"
+        android:text="followers" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tw"
+            android:layout_width="150dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="279dp"
+            android:layout_marginTop="300dp"
+            android:src="@drawable/twitter" />
+
+        <TextView
+            android:id="@+id/k_tw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:text="25rb"
+            android:textStyle="bold"
+            android:layout_marginStart="315dp"
+            android:gravity="left"
+            android:layout_marginTop="410dp"/>
+
+        <TextView
+            android:id="@+id/fol_tw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="315dp"
+            android:layout_marginTop="192dp"
+            android:gravity="fill"
+            android:text="followers" />
+
+    </RelativeLayout>
+</LinearLayout>
