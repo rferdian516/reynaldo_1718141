@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/startred"
-    android:orientation="vertical">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+android:background="@color/startred"
+android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/utama"
@@ -20,6 +20,7 @@
             android:layout_height="390dp"
             android:background="@drawable/board"
             android:orientation="vertical">
+
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/foto"
@@ -46,8 +47,7 @@
                 android:text="REYNALDO FERDIAN SAPUTRA"
                 android:textColor="#FFFF"
                 android:textSize="21dp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/jurusan"
@@ -56,8 +56,8 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:text="@string/teknik_informatika"
-                android:textStyle="bold"
-                android:textColor="#ffff">
+                android:textColor="#ffff"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -68,10 +68,18 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:text="ITN MALANG"
-                android:textSize="12dp"
-                android:textColor="#ffff">
+                android:textColor="#ffff"
+                android:textSize="12dp">
 
             </TextView>
+
+            <ImageView
+                android:id="@+id/ivSetting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/ic_language" />
 
         </LinearLayout>
 
@@ -87,23 +95,22 @@
             android:id="@+id/k_f"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="30dp"
-            android:text="@string/_5rb"
-            android:textStyle="bold"
             android:layout_marginStart="59dp"
+            android:layout_marginTop="510dp"
             android:gravity="left"
-            android:layout_marginTop="510dp"/>
+            android:text="@string/_5rb"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/fol_f"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/pengikut"
             android:layout_marginStart="49dp"
-            android:gravity="left"
             android:layout_marginTop="550dp"
-            android:textStyle="bold"
-            />
+            android:gravity="left"
+            android:text="@string/pengikut"
+            android:textStyle="bold" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/i"
@@ -118,22 +125,22 @@
             android:id="@+id/k_i"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="30dp"
-            android:text="@string/_45rb"
-            android:textStyle="bold"
             android:layout_marginStart="180dp"
+            android:layout_marginTop="510dp"
             android:gravity="left"
-            android:layout_marginTop="510dp"/>
+            android:text="@string/_45rb"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/fol_i"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="392dp"
-        android:gravity="fill"
-        android:text="@string/pengikut"
-            android:textStyle="bold"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="392dp"
+            android:gravity="fill"
+            android:text="@string/pengikut"
+            android:textStyle="bold" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/tw"
@@ -147,12 +154,12 @@
             android:id="@+id/k_tw"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="30dp"
-            android:text="@string/_15rb"
-            android:textStyle="bold"
             android:layout_marginStart="319dp"
+            android:layout_marginTop="510dp"
             android:gravity="left"
-            android:layout_marginTop="510dp"/>
+            android:text="@string/_15rb"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/fol_tw"
@@ -162,7 +169,20 @@
             android:layout_marginTop="392dp"
             android:gravity="fill"
             android:text="@string/pengikut"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_language"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
 
     </RelativeLayout>
+
 </LinearLayout>
